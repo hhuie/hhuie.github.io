@@ -1,0 +1,65 @@
+/*
+CSS for index.html on hhuie.github.io
+*/
+
+* {
+  padding: 0;
+  margin: 5;
+}
+
+body {
+  font-family: "Helvetica", monospace;
+  position: relative;
+  top: 200px;
+}
+
+a {
+  font-family: "Times New Roman", Georgia, monospace;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+.header {
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+}
+
+.title {
+  position: absolute;
+  left: 0px;
+  font-family: "Times New Roman", Georgia, fancy;
+  padding-left: 32px;
+  padding-top: 0px;
+}
+
+.navigation {
+  position: absolute;
+  right: 0px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.navigation li {
+  float: left;
+  padding-right: 32px;
+  padding-left: 0px;
+}
+
+.navigation a {
+  font-family: "Helvetica", sans-serif;
+  text-decoration: none;
+  color: #bbbbbb;
+}
+
+.navigation a:hover {
+  color: #eeeeee;
+}
