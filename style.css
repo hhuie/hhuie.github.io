@@ -2,6 +2,20 @@
 CSS for index.html on hhuie.github.io
 */
 
+body {
+  font-family: 'Roboto', sans-serif;
+ // margin-top: 7%;
+  background: #f5f4f2;
+
+}
+
+.header {
+  padding: 10px;
+  padding-left: 50px;
+  text-transform: uppercase;
+
+}
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -14,12 +28,6 @@ CSS for index.html on hhuie.github.io
   display: inline;
 }
 
-.jumbotron {
-  background-image:url('http://36.media.tumblr.com/d7f2884ceb993fc459a1b5113e886af2/tumblr_namppkXQK61twdviao1_1280.jpg');
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .jumbotron .container {
   position: relative;
@@ -33,54 +41,116 @@ CSS for index.html on hhuie.github.io
   font-weight: bold;
 }
 
-.jumbotron p {
-  font-size: 20px;
-  color: #fff;
-}
-
-.learn-more {
-  background-color: #f7f7f7;
-}
-
-.learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.learn-more a {
-  color: #00b0ff;
-}
-
-.neighborhood-guides {
-    background-color: #efefef;
-   // border-bottom: 1px solid #dbdbdb;
-
-}
-
-.neighborhood-guides h2 {
-    color: #393c3d;
-    font-size: 24px;
-    font-family: 'Shift', sans-serif;
-    font-weight: bold;
-
-}
-
-.neighborhood-guides p {
-    font-size: 15px;
-    margin-bottom: 13px;
-}
-
 .footer {
-    font-size: 15px;
+    font-size: 10px;
     margin-bottom: 13px;
-    margin-top: 13px;
+   // margin-top: 100px;
     color: #bcbcbc;
   //  border-bottom: 13px solid #efefef;
     font-family: 'Shift', sans-serif;
     text-align: center;
+    //float-down;
+   //  margin-top: 10%;
 }
 
 .footer a {
    color: #999999;
+}
+
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom, red, #40b3ff);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+}
+
+
+#circle:hover {
+  color: #ccc;
+  text-decoration: none;
+  background: #333;
+}
+
+#circle2 {
+  width: 520px;
+  height: 520px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.quarter {
+  width: 250px;
+  height: 250px;
+  //line-height: 250px;
+  text-align: center;
+  vertical-align: center;
+  color: #e9e7e1;
+  text-transform: uppercase;
+  font-size: 40px;
+  
+}
+
+.top-left {
+  border-top-left-radius: 250px;
+  background: #cdc8bd;
+  float: left;
+}
+
+.top-left p{
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+.top-left:hover {
+  background: #dedad2;
+}
+
+.top-right {
+  border-top-right-radius: 250px;
+  background: #a79f90;
+  float: right;
+}
+
+.top-right p{
+  margin-top: 120px;
+  margin-right: 50px;
+}
+
+.top-right:hover {
+  background: #c0b9ac;
+}
+
+.bottom-left {
+  border-bottom-left-radius: 250px;
+  background: #a79f90;
+  float: left;
+}
+
+.bottom-left p{
+  margin-top: 70px;
+  margin-left: 40px;
+  font-size: 40px;
+}
+
+.bottom-left:hover {
+  background: #c0b9ac;
+}
+
+.bottom-right {
+  border-bottom-right-radius: 250px;
+  background: #766d5e;
+  float: right;
+}
+
+.bottom-right p{
+  margin-top: 80px;
+  margin-right: 35px;
+  font-size: 25px;
 }
