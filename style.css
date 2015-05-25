@@ -2,18 +2,41 @@
 CSS for index.html on hhuie.github.io
 */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
  // margin-top: 7%;
   background: #f5f4f2;
+    margin: 10px;
+    //padding: 10px
+}
+
+#heading {
+ // padding: 10px;
+  padding-left: 50px;
+  text-transform: uppercase;
+   // float:left;
+    text-align: left;
 
 }
 
-.header {
-  padding: 10px;
-  padding-left: 50px;
-  text-transform: uppercase;
+nav {
+    text-align:right;
+    
+}
 
+nav a {
+    text-transform: uppercase;
+    padding: 10px;
+    
+}
+
+nav a:hover {
+    text-decoration: none;
 }
 
 .nav a {
@@ -24,9 +47,6 @@ body {
   text-transform: uppercase;
 }
 
-.nav li {
-  display: inline;
-}
 
 
 .jumbotron .container {
@@ -44,13 +64,10 @@ body {
 .footer {
     font-size: 10px;
     margin-bottom: 13px;
-   // margin-top: 100px;
     color: #bcbcbc;
-  //  border-bottom: 13px solid #efefef;
     font-family: 'Shift', sans-serif;
     text-align: center;
-    //float-down;
-   //  margin-top: 10%;
+    margin-top: 50px;
 }
 
 .footer a {
@@ -153,4 +170,10 @@ body {
   margin-top: 80px;
   margin-right: 35px;
   font-size: 25px;
+}
+
+
+
+.content {
+    float:down;
 }
