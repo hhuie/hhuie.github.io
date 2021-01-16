@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Hana Huie - Coding</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Coding Portfolio</h1>
+    </div>
+
+    <div id="icon">
+      <a href='index.html'>
+        <img src="images/headshot-crop.JPG" alt="profile photo">
+        <h1>Hana Huie</h1>
+      </a>
+    </div>
+
+    <div id="social-links">
+      <div class="social" id="social1">
+        <a href="https://github.com/hhuie"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="social" id="social2">
+        <a href="https://www.facebook.com/hanahuie/"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="social" id="social3">
+        <a href="https://www.linkedin.com/in/hana-huie-8902671b3/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="social" id="social4">
+        <a href="http://instagram.com/mighty_jalapeno"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div id="list">
+      <ol>
+
+        <li>
+          <div class="list-elem">
+            <div class="list-title">
+              <p>
+                <strong>K.K. Music Player</strong>
+                <br>
+                <a href = "https://github.com/hhuie/kkmusicplayer">View code on GitHub</a>
+              </p>
+            </div>
+            <div class="list-content">
+              <p>
+                A simple web music player for songs from the video game <em>Animal Crossing: New Horizons</em>.
+                I created this project in order to improve my React skills, learn how to use context and hooks, and practice CSS.
+                This project was bootstrapped with Create React App and uses <a href="http://acnhapi.com">ACNH API</a> to fetch song metadata.
+              </p>
+            </div>
+            <div class="list-image">
+              <img src="images/kk.png" alt="K.K. Music Player">
+            </div>
+          </div>
+        </li>
+
+        <div class="list-elem">
+          <li>
+            <div class="list-title">
+              <p>
+                <strong>Simple Video Chat Web App</strong>
+                <br>
+                <a href="#">Project code available upon request.</a>
+              </p>
+            </div>
+            <div class="list-content">
+              <p>
+                Used Express, WebRTC, Socket.io, and PeerJS to build a simple JavaScript video chat web app with side-by-side instant message chatting. Includes mute/unmute and start/stop video functions.
+                Includes unique chat rooms so that users can invite people to a chat room by sending them a specific room link.
+              </p>
+            </div>
+            <div class="list-image">
+              <img src="images/vidchatapp.png" alt="Simple Video Chat Web App">
+            </div>
+          </li>
+        </div>
+
+        <div class="list-elem">
+          <li>
+            <div class="list-title" id='ticket'>
+              <p>
+                <strong>Ticket Tracker API</strong>
+                <br>
+                <a href="#ticket">Project code available upon request.</a>
+              </p>
+            </div>
+            <div class="list-content">
+              <p>
+                School project - created an API that implements CRUD operations for a ticket-tracking system.
+                Tickets are stored in a MongoDB database. Ticket schema includes title, author, description, type, due date, assigned to, and status. Uses Express and MongoDB/Mongoose.
+              </p>
+            </div>
+            <div class="list-image">
+                <img src="images/ticketapi.png" alt="Ticket Tracking API">
+                <div class='img-caption'>
+                An example GET request with one endpoint of the API.
+              </div>
+            </div>
+          </li>
+        </div>
+      </ol>
+    </div>
+
+    <div id='footer'>
+      <a href='images/Hana_Huie_Resume_CS.pdf'>Download My Resume</a>
+      <br/>
+      Contact Me: <a href='mailto:hana.huie@gmail.com'>hana.huie@gmail.com</a>
+    </div>
+
+  </body>
+</html>
