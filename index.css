@@ -1,134 +1,74 @@
-body {
-  /*background-color: #ddc4f5;*/
-  background-color: rgb(66, 135, 245);
-  background-image: url(images/lowpoly2.png);
-  /*height: 90%;*/
-  background-size: cover;
-  background-attachment: fixed;
-  background-blend-mode: hard-light;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  font-size: 2.5vw;
-  font-family: "Open Sans", sans-serif;
+
+#page-content {
+  position: fixed;
+  top: 0vh;
+  left: 20vw;
+  width: 80vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-#header {
-  padding: .5em;
-  background-color: rgb(167, 166, 255, 0.2);
-  height: 10vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -2.7vw;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: .7em;
-  color: #ffffff;
+#page-title {
+  position: fixed;
+  top: 35vh;
+  left: 25vw;
+  font-family: 'Playfair Display', serif;
+  font-size: 3vw;
 }
 
-#header > h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 5vw;
-  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+#page-text {
+  position: fixed;
+  font-size: 1.7vw;
+  top: 50vh;
+  left: 25vw;
 }
 
-#icon {
-  display: flex;
-  align-items: center;
-  margin: 2em;
+#page-text mark {
+  background: linear-gradient(to right, white 50%, #cbf2e6 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
 }
 
-#icon > img {
-  width: 15vw;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 1.2vw;
-  /*border-color: #5c9af7;*/
-  border-color: rgb(27, 133, 247);
-  margin-left: auto;
-  margin-right: auto;
+#page-text mark:hover {
+  background-position: left bottom;
+  transition: all ease-out 1s;
 }
 
-/*a:link {
-  /*color: #5c9af7;*/
-  /*color: rgb(27, 133, 247);
+#page-text > a {
+  display: block;
 }
 
-a:visited {
-  /*color: #5c9af7;*/
-/*  color: rgb(27, 133, 247);
+#graphic {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  left: 35%;
+  top: -5%;
 }
 
-a:hover {
-  color: #bd95f5;
+svg {
+  width: 100%;
+  height: 100%;
 }
 
-a:active {
-  color: #1b17e8;
-} */
-
-a.link-button {
-  font-size: 4vw;
-  display: flex;
-  padding: 0.35em 0.5em;
-  border: 0.1em solid rgb(27, 133, 247);
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.7em;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  /*font-weight: 300;*/
-  color: #ffffff;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 40%;
-  min-height: 30vw;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 3px 5px rgba(0,0,0,0.9);
+path {
+  opacity: NaN;
+  fill-opacity: null;
+  stroke-opacity: null;
+  stroke-dasharray: 5,5;
+  stroke-linecap: round;
+  stroke-width: 1px;
+  stroke: #6ee6c2;
+  fill: #cbf2e6 ;
+  /*fill: url(#myGradient);*/
+  transition: all ease-in-out 0.5s;
 }
 
-#button1 {
-  background-image: url(images/codethumb2.jpg);
-  background-size: cover;
-}
-
-#button2 {
-  background-image: url(images/dancethumb.jpg);
-  background-size: cover;
-}
-
-a.link-button:hover {
-  background-blend-mode: overlay;
-}
-
-a#button1:hover {
-  /*color: #ffffff;
-  background-color: rgb(27, 133, 247);*/
-  /*background-image: url(images/kk.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-blend-mode: lighten;*/
-}
-
-a#button2:hover {
-  /*color: #ffffff;
-  background-color: rgb(27, 133, 247);*/
-  /*background-image: url(images/inorbitthumbnail.jpg);
-  background-size: 100%;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-blend-mode: overlay;*/
-}
-
-#categories {
-  display: flex;
-  margin-top: 4vw;
-  justify-content: space-around;
-  align-content: center;
-  flex-wrap: wrap;
-  align-items: stretch;
+path:hover {
+  /*fill: url(#myGradient);*/
+  fill: #f7b2bf;
+  stroke: #e6778c;
+  transition: all ease-in-out 0.5s;
 }
