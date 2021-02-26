@@ -67,7 +67,7 @@
 	filter: blur(0.5px);
 }
 
- #gallery > div:hover a {
+#gallery > div:hover a {
    font-size: 1.5vw;
 	 opacity: 1;
 }
@@ -79,6 +79,81 @@
 	 text-decoration: none;
 }
 
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  /*opacity: 0;
+  /*transition: opacity ease-in 1s;*/
+}
+
+.lightbox > a > .content {
+  text-align: center;
+}
+
+.lightbox > a > .content > img {
+  margin-top: 5vh;
+  max-height: 70vh;
+}
+
+[id^="lightbox-"]:target {
+  display: block;
+  opacity: 100;
+  transition: opacity 0.5s;
+}
+
+[id^="lightbox-"]:target img {
+  animation: fadeInScale 0.5s;
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    filter: blur(3px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.lightbox > a:link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.lightbox > a:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.lightbox > a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.lightbox > a:active {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+}
+
+.title {
+  position: relative;
+  width: 60vw;
+  left: 20vw;
+}
+
+/*
 [id^="lightbox-"] {
 	 position: fixed;
 	 top: 0;
@@ -173,3 +248,4 @@
  [id^="lightbox-"] a.close::after {
 	 content: "X";
 }
+*/

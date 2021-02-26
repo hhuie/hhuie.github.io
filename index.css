@@ -1,26 +1,28 @@
 
 #page-content {
-  position: fixed;
+  position: relative;
   top: 0vh;
   left: 20vw;
   width: 80vw;
-  height: 100vh;
   box-sizing: border-box;
+  /*overflow-x: hidden;*/
 }
 
 #page-title {
-  position: fixed;
-  top: 35vh;
-  left: 25vw;
+  position: relative;
+  top: 20vw;
+  left: 5vw;
   font-family: 'Playfair Display', serif;
   font-size: 3vw;
 }
 
 #page-text {
-  position: fixed;
+  position: relative;
   font-size: 1.7vw;
-  top: 50vh;
-  left: 25vw;
+  top: 21vw;
+  left: 5vw;
+  width: 60%;
+  height: 100%;
 }
 
 #page-text mark {
@@ -35,9 +37,10 @@
   transition: all ease-out 1s;
 }
 
+/*
 #page-text > a {
   display: block;
-}
+}*/
 
 #graphic {
   position: fixed;
@@ -71,4 +74,13 @@ path:hover {
   fill: #f7b2bf;
   stroke: #e6778c;
   transition: all ease-in-out 0.5s;
+}
+
+#list {
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+.list-image img {
+  width: 30vw;
 }

@@ -34,11 +34,18 @@ body {
   width: 100%;*/
 }
 
-#icon > img {
+#icon img {
   width: 10vw;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  border: 0px solid #e8e8e8;
+  transition: border ease 0.5s;
+}
+
+#icon img:hover {
+  border: 1.5vh double #f7b2bf;
+  transition: all ease 0.5s;
 }
 
 #sidebar > * {
@@ -62,6 +69,25 @@ body {
   text-shadow: 2px 3px 5px white;
   padding-top: 2vh;
   padding-bottom: 2vh;
+}
+
+#name a:link {
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(to right, #f7b2bf 50%, #e8e8e8 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  transition: all 0.8s;
+}
+
+#name a:visited {
+  color: inherit;
+}
+#name a:hover {
+  background-position: left bottom;
+  transition: all 0.8s;
+}
+#name a:active {
 
 }
 
