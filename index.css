@@ -45,16 +45,15 @@
 
 #graphic {
   position: fixed;
-
-  width: 100%;
-  height: 100%;
-  left: 35%;
-  top: -5%;
+  width: 70vw;
+  right: 0.5vw;
+  top: 0;
 }
 
 svg {
   width: 100%;
   height: 100%;
+
 }
 
 path {
