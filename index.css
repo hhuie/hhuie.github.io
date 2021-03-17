@@ -13,13 +13,13 @@
   top: 20vw;
   left: 5vw;
   font-family: 'Playfair Display', serif;
-  font-size: 3vw;
+  font-size: calc(14px + 3vw);
   width: 60%;
 }
 
 #page-text {
   position: relative;
-  font-size: 1.7vw;
+  font-size: calc(10px + 1vw);
   top: 21vw;
   left: 5vw;
   width: 60%;
@@ -66,14 +66,14 @@ path {
   stroke: #6ee6c2;
   fill: #cbf2e6 ;
   /*fill: url(#myGradient);*/
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
 }
 
 path:hover {
   /*fill: url(#myGradient);*/
   fill: #f7b2bf;
   stroke: #e6778c;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
 }
 
 #list {
@@ -83,4 +83,8 @@ path:hover {
 
 .list-image img {
   width: 30vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+
 }
