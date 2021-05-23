@@ -85,6 +85,20 @@ path:hover {
   width: 30vw;
 }
 
+#img-box {
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+#page-text img {
+  width: 30vw;
+}
+
+#caption {
+  font-size: 1vw;
+}
+
 @media (max-aspect-ratio: 1/1) {
 
 }

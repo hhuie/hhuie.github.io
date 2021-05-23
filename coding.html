@@ -66,9 +66,14 @@
       Coding Projects
     </div>
     <div id="page-text">
+      Jump to...<br/>
+      <a href="#webdev">Web Development</a><br/>
+      <a href="#networks">Networks/Socket Programming</a><br/>
+      <a href="#cv">Computer Vision</a>
+
+      <h2 id="webdev">Web Development</h2>
       <div id="list">
         <ol>
-
           <li>
             <div class="list-elem">
               <div class="list-title">
@@ -137,6 +142,154 @@
           </div>
         </ol>
       </div>
+
+      <h2 id="networks">Networks/Socket Programming</h2>
+      <div id="list">
+        <ol>
+          <li>
+            <div class="list-elem">
+              <div class="list-title">
+                <p>
+                  <strong>TCP Server & Client</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Created a TCP server and client in C. The client reads data from a file and sends 
+                  fragments of that data to the server. The server computes SHA-1 hashes of that data and 
+                  sends it back to the client. Supports concurrency with threads. (School project)
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <div class="list-elem">
+            <li>
+              <div class="list-title">
+                <p>
+                  <strong>Chat Server</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Reverse engineered an existing chat server to build a replica in Python. The chat server supports concurrent connections from multiple clients, 
+                  creating and joining password-protected chat rooms, setting custom nicknames, and sending private messages to other users. (School project)
+                </p>
+              </div>
+            </li>
+          </div>
+
+          <div class="list-elem">
+            <li>
+              <div class="list-title" id='ticket'>
+                <p>
+                  <strong>DNS Client</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Coded a DNS client that uses iterative resolution to resolve domain names. Supports CNAMEs, glue records, and caching. Outputs all address records found along the way. Coded in Python. (School project)
+                </p>
+              </div>
+            </li>
+          </div>
+        </ol>
+      </div>
+
+      <h2 id="cv">Computer Vision</h2>
+      All of the following projects were for my university's computer vision class and coded in Python with Numpy; some used OpenCV.
+      <div id="list">
+        <ol>
+          <li>
+            <div class="list-elem">
+              <div class="list-title">
+                <p>
+                  <strong>Edge Detection</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Wrote a program that implements edge detection on images through the process of manually convolving images with a gaussian kernel for noise reduction, 
+                  computing image gradients and the angles of the gradients, edge thinning, and hysteresis thresholding.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <div class="list-elem">
+            <li>
+              <div class="list-title">
+                <p>
+                  <strong>Feature Detection with Bag of Words Histograms</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Computed SIFT feature descriptors for three different image class training sets, then clustered the features with the k-means clustering algorithm.
+                  Then created normalized histograms of the features found in each image. Then did the same with testing image sets and used sklearn's KNeighborsClassifier on the histograms to 
+                  determine which class each test image belonged to. Repeated this process with linear and kernel SVMs.
+                </p>
+              </div>
+            </li>
+          </div>
+
+          <div class="list-elem">
+            <li>
+              <div class="list-title" id='ticket'>
+                <p>
+                  <strong>Image Classification with Neural Networks</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Created a multi layer perceptron (neural network) to classify the MNIST set of handwritten numerical digits using only Numpy.
+                  The MLP included a hidden layer of 64 neurons and output layer of 10 neurons and used the softmax function for output. 
+                  The weights and biases within the network were computed manually through deriving the necessary gradients. After training, 
+                  my network had about 90% accuracy classifying the test images. Also implemented a convolutional neural network through Pytorch which had 
+                  an accuracy of about 98% on the test images.  
+                </p>
+              </div>
+            </li>
+          </div>
+
+          <div class="list-elem">
+            <li>
+              <div class="list-title" id='ticket'>
+                <p>
+                  <strong>Panoramic Stitching with Homographies</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Wrote a program that computes and matches SIFT features between images then uses 
+                  cv2.findHomography() to compute the homography matrix required to map the matched 
+                  features from one image to another with RANSAC. The images are then transformed using 
+                  cv2.warpPerspective() and the homography matrices, and then are translated to form a panorama.
+                </p>
+              </div>
+            </li>
+          </div>
+
+          <div class="list-elem">
+            <li>
+              <div class="list-title" id='ticket'>
+                <p>
+                  <strong>Visual Odometry</strong>
+                </p>
+              </div>
+              <div class="list-content">
+                <p>
+                  Given a subset of frames from video footage taken by a camera mounted to a driving car, I reconstructed 
+                  the trajectory of the camera through 3D space. The pipeline included matching keypoints between successive 
+                  frames and using them to estimate the fundamental matrix, compute the essential matrix, get the translation and rotation parameters, and 
+                  reconstruct the camera's path from the rotation and translation parameters.
+                </p>
+              </div>
+            </li>
+          </div>
+        </ol>
+      </div>
+
     </div>
 
 
