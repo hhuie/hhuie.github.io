@@ -144,6 +144,7 @@
       </div>
 
       <h2 id="networks">Networks/Socket Programming</h2>
+      The following projects were for my university's Computer Networks class.
       <div id="list">
         <ol>
           <li>
@@ -157,7 +158,7 @@
                 <p>
                   Created a TCP server and client in C. The client reads data from a file and sends 
                   fragments of that data to the server. The server computes SHA-1 hashes of that data and 
-                  sends it back to the client. Supports concurrency with threads. (School project)
+                  sends it back to the client. Supports concurrency with threads.
                 </p>
               </div>
             </div>
@@ -173,7 +174,7 @@
               <div class="list-content">
                 <p>
                   Reverse engineered an existing chat server to build a replica in Python. The chat server supports concurrent connections from multiple clients, 
-                  creating and joining password-protected chat rooms, setting custom nicknames, and sending private messages to other users. (School project)
+                  creating and joining password-protected chat rooms, setting custom nicknames, and sending private messages to other users.
                 </p>
               </div>
             </li>
@@ -188,7 +189,7 @@
               </div>
               <div class="list-content">
                 <p>
-                  Coded a DNS client that uses iterative resolution to resolve domain names. Supports CNAMEs, glue records, and caching. Outputs all address records found along the way. Coded in Python. (School project)
+                  Coded a DNS client that uses iterative resolution to resolve domain names. Supports CNAMEs, glue records, and caching. Outputs all address records found along the way. Coded in Python.
                 </p>
               </div>
             </li>
@@ -197,7 +198,7 @@
       </div>
 
       <h2 id="cv">Computer Vision</h2>
-      All of the following projects were for my university's computer vision class and coded in Python with Numpy; some used OpenCV.
+      The following projects were for my university's Computer Vision class and coded in Python with Numpy; some used OpenCV.
       <div id="list">
         <ol>
           <li>
@@ -226,7 +227,7 @@
               <div class="list-content">
                 <p>
                   Computed SIFT feature descriptors for three different image class training sets, then clustered the features with the k-means clustering algorithm.
-                  Then created normalized histograms of the features found in each image. Then did the same with testing image sets and used sklearn's KNeighborsClassifier on the histograms to 
+                  Created normalized histograms of the features found in each image. Then did the same with testing image sets and used sklearn's KNeighborsClassifier on the histograms to 
                   determine which class each test image belonged to. Repeated this process with linear and kernel SVMs.
                 </p>
               </div>
@@ -243,9 +244,7 @@
               <div class="list-content">
                 <p>
                   Created a multi layer perceptron (neural network) to classify the MNIST set of handwritten numerical digits using only Numpy.
-                  The MLP included a hidden layer of 64 neurons and output layer of 10 neurons and used the softmax function for output. 
-                  The weights and biases within the network were computed manually through deriving the necessary gradients. After training, 
-                  my network had about 90% accuracy classifying the test images. Also implemented a convolutional neural network through Pytorch which had 
+                  90% accuracy classifying the test images after training. Also implemented a convolutional neural network through Pytorch which had 
                   an accuracy of about 98% on the test images.  
                 </p>
               </div>
@@ -261,10 +260,7 @@
               </div>
               <div class="list-content">
                 <p>
-                  Wrote a program that computes and matches SIFT features between images then uses 
-                  cv2.findHomography() to compute the homography matrix required to map the matched 
-                  features from one image to another with RANSAC. The images are then transformed using 
-                  cv2.warpPerspective() and the homography matrices, and then are translated to form a panorama.
+                  Matched SIFT features between images, computed homography matrices, and transformed and translated images to create a panorama using OpenCV functions.
                 </p>
               </div>
             </li>
@@ -279,10 +275,8 @@
               </div>
               <div class="list-content">
                 <p>
-                  Given a subset of frames from video footage taken by a camera mounted to a driving car, I reconstructed 
-                  the trajectory of the camera through 3D space. The pipeline included matching keypoints between successive 
-                  frames and using them to estimate the fundamental matrix, compute the essential matrix, get the translation and rotation parameters, and 
-                  reconstruct the camera's path from the rotation and translation parameters.
+                  Reconstructed the trajectory of a camera through 3D space given a subset of frames from video footage taken by a camera mounted to a driving car.
+                   The pipeline included matching keypoints between successive frames and estimating the fundamental and essential matrices.
                 </p>
               </div>
             </li>

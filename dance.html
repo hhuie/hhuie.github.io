@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="gallery.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="gallery.js"></script>
   </head>
 <body>
   <div id="sidebar">
@@ -44,28 +45,44 @@
   
   <div id="page-content">
     <div id="gallery">
-      <div><img src="dance/inorbit.jpg" loading="lazy"/><a href="#lightbox-1">In Orbit</a></div>
-      <div><img src="dance/champarty.jpg" loading="lazy"/><a href="#lightbox-2">Champagne Party for Time Travelers</a></div>
-      <div><img src="dance/citizen.jpg" loading="lazy"/><a href="#lightbox-3">Citizen Displaced</a></div>
-      <div><img src="dance/hamlet.jpg" loading="lazy"/><a href="#lightbox-4">Hamlet</a></div>
-      <div><img src="dance/hamlet2.jpg" loading="lazy"/><a href="#lightbox-5">Hamlet</a></div>
-      <div><img src="dance/highviolet2.jpg" loading="lazy"/><a href="#lightbox-6">High Violet</a></div>
-      <div><img src="dance/inorbit2.jpg" loading="lazy"/><a href="#lightbox-7">In Orbit</a></div>
-      <div><img src="dance/RW1.jpg" loading="lazy"/><a href="#lightbox-8">Responsive Wild</a></div>
-      <div><img src="dance/RW2.jpg" loading="lazy"/><a href="#lightbox-9">Responsive Wild</a></div>
-      <div><img src="dance/RW3.jpg" loading="lazy"/><a href="#lightbox-10">Responsive Wild</a></div>
-      <div><img src="dance/RW4.jpg" loading="lazy"/><a href="#lightbox-11">Responsive Wild</a></div>
-      <div><img src="dance/hamlet3.jpg" loading="lazy"/><a href="#lightbox-12">Hamlet</a></div>
-      <div><img src="dance/doubledbodies.jpg" loading="lazy"/><a href="#lightbox-13">Doubled Bodies</a></div>
-      <div><img src="dance/champarty2.jpg" loading="lazy"/><a href="#lightbox-14">Champagne Party for Time Travelers</a></div>
-      <div><img src="dance/lostamong.jpg" loading="lazy"/><a href="#lightbox-15">Lost Among....</a></div>
-      <!--div><img src="https://picsum.photos/600/600/?image=527" loading="lazy"/><a href="#lightbox-16">527</a></div>
-      <div><img src="https://picsum.photos/600/600/?image=528" loading="lazy"/><a href="#lightbox-17">528</a></div>
-      <div><img src="https://picsum.photos/600/600/?image=529" loading="lazy"/><a href="#lightbox-18">529</a></div-->
+
+      <div><img src="dance/inorbit2.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-7')">In Orbit</a></div>
+      <div><img src="dance/champarty.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-2')">Champagne Party for Time Travelers</a></div>
+      <div><img src="dance/telmap5.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-21')">telepathic maps</a></div>
+      <div><img src="dance/freqmach5.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-26')">Frequency Machines</a></div>
+      <div><img src="dance/hamlet3.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-12')">Hamlet</a></div>
+      <div><img src="dance/inorbit.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-1')">In Orbit</a></div>
+      <div><img src="dance/telmap4.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-22')">telepathic maps</a></div>
+      <div><img src="dance/highviolet2.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-6')">High Violet</a></div>
+
+
+      <div><img src="dance/freqmach13.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-16')">Frequency Machines</a></div>
+      <div><img src="dance/cruels3.png" loading="lazy"/><a href="javascript:onOpen('lightbox-17')">Cruel Spiral</a></div>
+      <div><img src="dance/freqmach12.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-18')">Frequency Machines</a></div>
+      <div><img src="dance/doubledbodies.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-13')">Doubled Bodies</a></div>
+      <div><img src="dance/rw5.png" loading="lazy"/><a href="javascript:onOpen('lightbox-23')">Responsive Wild</a></div>
+      <div><img src="dance/cruels1.png" loading="lazy"/><a href="javascript:onOpen('lightbox-28')">Cruel Spiral</a></div>
+      <div><img src="dance/freqmach11.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-19')">Frequency Machines</a></div>
+      <div><img src="dance/hamlet2.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-5')">Hamlet</a></div>
+      <div><img src="dance/freqmach10.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-20')">Frequency Machines</a></div>
+      <div><img src="dance/cruels2.png" loading="lazy"/><a href="javascript:onOpen('lightbox-27')">Cruel Spiral</a></div>
+      <div><img src="dance/freqmach7.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-24')">Frequency Machines</a></div>
+      <div><img src="dance/telmap2.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-25')">telepathic maps</a></div>
+
+      
+      <div><img src="dance/citizen.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-3')">Citizen Displaced</a></div>
+      <div><img src="dance/hamlet.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-4')">Hamlet</a></div>
+      <div><img src="dance/RW1.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-8')">Responsive Wild</a></div>
+      <div><img src="dance/RW2.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-9')">Responsive Wild</a></div>
+      <div><img src="dance/RW3.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-10')">Responsive Wild</a></div>
+      <div><img src="dance/RW4.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-11')">Responsive Wild</a></div>
+      <div><img src="dance/champarty2.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-14')">Champagne Party for Time Travelers</a></div>
+      <div><img src="dance/lostamong.jpg" loading="lazy"/><a href="javascript:onOpen('lightbox-15')">Lost Among....</a></div>
+      
     </div>
 
     <div class="lightbox" id="lightbox-1">
-        <a href="#gallery/">
+        <a href="javascript:onClose('lightbox-1')">
           <div class="content"><img src="dance/inorbit.jpg" loading="lazy"/>
               <div class="title">
                 "In Orbit" - Choreographers: Hana Huie & Dasha Mozolina,
@@ -81,7 +98,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-2">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-2')">
         <div class="content">
             <img src="dance/champarty.jpg" loading="lazy"/>
             <div class="title">
@@ -98,7 +115,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-3">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-3')">
         <div class="content"><img src="dance/citizen.jpg" loading="lazy"/>
             <div class="title">
               "Citizen Displaced" - Choreographer: Christine Hands,
@@ -110,7 +127,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-4">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-4')">
         <div class="content"><img src="dance/hamlet.jpg" loading="lazy"/>
             <div class="title">
               "Hamlet" - MFA Thesis Concert. Choreographer: Christine Hands.
@@ -122,7 +139,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-5">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-5')">
         <div class="content"><img src="dance/hamlet2.jpg" loading="lazy"/>
             <div class="title">
               "Hamlet" - MFA Thesis Concert. Choreographer: Christine Hands.
@@ -134,7 +151,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-6">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-6')">
         <div class="content"><img src="dance/highviolet2.jpg" loading="lazy"/>
             <div class="title">
               "High Violet" - Choreographer: Kendra Portier.
@@ -146,7 +163,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-7">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-7')">
         <div class="content"><img src="dance/inorbit2.jpg" loading="lazy"/>
             <div class="title">
               "In Orbit" - Choreographers: Hana Huie & Dasha Mozolina,
@@ -162,7 +179,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-8">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-8')">
         <div class="content"><img src="dance/RW1.jpg" loading="lazy"/>
             <div class="title">
               "Responsive Wild" - MFA Thesis Concert.
@@ -180,7 +197,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-9">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-9')">
         <div class="content"><img src="dance/RW2.jpg" loading="lazy"/>
             <div class="title">
               "Responsive Wild" - MFA Thesis Concert.
@@ -198,7 +215,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-10">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-10')">
         <div class="content"><img src="dance/RW3.jpg" loading="lazy"/>
             <div class="title">
               "Responsive Wild" - MFA Thesis Concert.
@@ -216,7 +233,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-11">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-11')">
         <div class="content"><img src="dance/RW4.jpg" loading="lazy"/>
             <div class="title">
               "Responsive Wild" - MFA Thesis Concert.
@@ -234,7 +251,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-12">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-12')">
         <div class="content"><img src="dance/hamlet3.jpg" loading="lazy"/>
             <div class="title">
               "Hamlet" - MFA Thesis Concert. Choreographer: Christine Hands.
@@ -246,7 +263,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-13">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-13')">
         <div class="content"><img src="dance/doubledbodies.jpg" loading="lazy"/>
             <div class="title">
               "Doubled Bodies" -
@@ -258,7 +275,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-14">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-14')">
         <div class="content"><img src="dance/champarty2.jpg" loading="lazy"/>
             <div class="title">"Champagne Party for Time Travelers" - Choreographers: Hana Huie & Sydney Lemelin,
             <strong>Sound Designer:</strong> Zoe Thomas,
@@ -272,7 +289,7 @@
     </div>
 
     <div class="lightbox" id="lightbox-15">
-      <a href="#gallery/">
+      <a href="javascript:onClose('lightbox-15')">
         <div class="content"><img src="dance/lostamong.jpg" loading="lazy"/>
             <div class="title">
               "Lost Among...." - UMoves Undergraduate Dance Concert.
@@ -282,6 +299,181 @@
         </div>
       </a>
     </div>
+
+    <div class="lightbox" id="lightbox-16">
+      <a href="javascript:onClose('lightbox-16')">
+        <div class="content"><img src="dance/freqmach13.jpg" loading="lazy"/>
+            <div class="title">
+              "Frequency Machines" - UMD Spring Dance Concert 2021
+              Choreographer: Krissy Harris
+              Performers: Krissy Harris, Hana Huie, Maggie Laszewski
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-17">
+      <a href="javascript:onClose('lightbox-17')">
+        <div class="content"><img src="dance/cruels3.png" loading="lazy"/>
+            <div class="title">
+              "Cruel Spiral" - UMD Spring Dance Concert 2021
+              Choreographer: Tristan Koepke
+              Performers: Hana Huie, Gabi Woska
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-18">
+      <a href="javascript:onClose('lightbox-18')">
+        <div class="content"><img src="dance/freqmach12.jpg" loading="lazy"/>
+            <div class="title">
+              "Frequency Machines" - UMD Spring Dance Concert 2021
+              Choreographer: Krissy Harris
+              Performers: Krissy Harris, Hana Huie, Maggie Laszewski
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-19">
+      <a href="javascript:onClose('lightbox-19')">
+        <div class="content"><img src="dance/freqmach11.jpg" loading="lazy"/>
+            <div class="title">
+              "Frequency Machines" - UMD Spring Dance Concert 2021
+              Choreographer: Krissy Harris
+              Performers: Krissy Harris, Hana Huie, Maggie Laszewski
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-20">
+      <a href="javascript:onClose('lightbox-20')">
+        <div class="content"><img src="dance/freqmach10.jpg" loading="lazy"/>
+            <div class="title">
+              "Frequency Machines" - UMD Spring Dance Concert 2021
+              Choreographer: Krissy Harris
+              Performers: Krissy Harris, Hana Huie, Maggie Laszewski
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-21">
+      <a href="javascript:onClose('lightbox-21')">
+        <div class="content"><img src="dance/telmap5.jpg" loading="lazy"/>
+            <div class="title">
+              telepathic maps - UMD Spring Dance Concert 2021
+              Choreographer: Renee Gerardo
+              Performers: Renee Gerardo, Rebecca Hill, Hana Huie, Christina Robson
+              Lighting: Malory Hartman
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-22">
+      <a href="javascript:onClose('lightbox-22')">
+        <div class="content"><img src="dance/telmap4.jpg" loading="lazy"/>
+            <div class="title">
+              telepathic maps - UMD Spring Dance Concert 2021
+              Choreographer: Renee Gerardo
+              Performers: Renee Gerardo, Rebecca Hill, Hana Huie, Christina Robson
+              Lighting: Malory Hartman
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-23">
+      <a href="javascript:onClose('lightbox-23')">
+        <div class="content"><img src="dance/rw5.png" loading="lazy"/>
+            <div class="title">
+              "Responsive Wild" - MFA Thesis Concert.
+              Choreographer/Artistic Director: Krissy Harris.
+              Performers: Krissy Harris, Hana Huie, Maggie Laszewski.
+              Scenic Design: Aleksandr Shiriaev.
+              Lighting Design: J. Mitchell Cronin.
+              Costume Design: Ashlynne Ludwig.
+              Sound Design: Veronica J. Lancaster.
+              Projections: Taylor Verrett.
+              Photo: Dave Andrews.
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-24">
+      <a href="javascript:onClose('lightbox-24')">
+        <div class="content"><img src="dance/freqmach7.jpg" loading="lazy"/>
+            <div class="title">
+              "Frequency Machines" - UMD Spring Dance Concert 2021
+              Choreographer: Krissy Harris
+              Performers: Krissy Harris, Hana Huie, Maggie Laszewski
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-25">
+      <a href="javascript:onClose('lightbox-25')">
+        <div class="content"><img src="dance/telmap2.jpg" loading="lazy"/>
+            <div class="title">
+              telepathic maps - UMD Spring Dance Concert 2021
+              Choreographer: Renee Gerardo
+              Performers: Renee Gerardo, Rebecca Hill, Hana Huie, Christina Robson
+              Lighting: Malory Hartman
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-26">
+      <a href="javascript:onClose('lightbox-26')">
+        <div class="content"><img src="dance/freqmach5.jpg" loading="lazy"/>
+            <div class="title">
+              "Frequency Machines" - UMD Spring Dance Concert 2021
+              Choreographer: Krissy Harris
+              Performers: Krissy Harris, Hana Huie, Maggie Laszewski
+              Photo: Jonathan Hsu
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-27">
+      <a href="javascript:onClose('lightbox-27')">
+        <div class="content"><img src="dance/cruels2.png" loading="lazy"/>
+            <div class="title">
+              "Cruel Spiral" - UMD Spring Dance Concert 2021
+              Choreographer: Tristan Koepke
+              Performers: Hana Huie, Gabi Woska
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="lightbox" id="lightbox-28">
+      <a href="javascript:onClose('lightbox-28')">
+        <div class="content"><img src="dance/cruels1.png" loading="lazy"/>
+            <div class="title">
+              "Cruel Spiral" - UMD Spring Dance Concert 2021
+              Choreographer: Tristan Koepke
+              Performers: Hana Huie, Gabi Woska
+            </div>
+        </div>
+      </a>
+    </div>
+
 
   </div>
 </body>
